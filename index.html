@@ -6,17 +6,17 @@
         // ננסה לפתוח את האפליקציה עם ה-Intent URI
         window.onload = function() {
             // קישור ל-Intent URI של האפליקציה
-            var intentURL = "intent://#Intent;package=com.sec.android.app.camera.Camera;end";
+            var intentURL = "intent://#Intent;package=com.android.chrome;end";
             window.location.href = intentURL;
             
             // במקרה שהקישור לא פועל, הפנה את המשתמש לחנות (כמ fallback)
             setTimeout(function() {
-                window.location.href = "https://play.google.com/store/apps/details?id=com.sec.android.app.camera.Camera";
-            }, 2000);  // הזמן המקסימלי לפני שנפנה לחנות
+                window.location.href = "https://play.google.com/store/apps/details?id=com.android.chrome";
+            }, 9000);  // הזמן המקסימלי לפני שנפנה לחנות
         }
     </script>
 </head>
 <body>
-    <p>If you are not redirected, <a href="intent://#Intent;package=com.sec.android.app.camera.Camera;end">click here to open the app</a>.</p>
+    <p>If you are not redirected, <a href="intent://#Intent;package=com.android.chrome;end">click here to open the app</a>.</p>
 </body>
 </html>
